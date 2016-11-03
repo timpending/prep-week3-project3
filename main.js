@@ -18,10 +18,14 @@ ADVANCED TRACK: 14-20
 */
 
 
-
 // 1. Create an object called "me" that describes you with your name, city, and job title.
-//    Display the content of the object in the HTML page. 
+//    Display the content of the object in the HTML page.
 
+let me = {
+  name: 'Tim',
+  city: 'Denver',
+  title: 'Funemployed'
+}
 
 
 
@@ -32,6 +36,7 @@ ADVANCED TRACK: 14-20
 //                              jobTitle: 'professional wrestler',
 //                              family: ['Joan', 'Kyle', 'Hank'] }
 
+me.family = ['Andy', 'Scotty', 'Tommy']
 
 
 
@@ -39,7 +44,8 @@ ADVANCED TRACK: 14-20
 
 // 3. Using the "me" object, use dot notation and bracket notation to access the value of your city and display the results in the HTML page.
 
-
+console.log(me.city);
+console.log(me['city']);
 
 
 
@@ -83,22 +89,25 @@ var invitees = { adults: [{
 
 
 // 4. Access Penny's dinner choice (this will be the second item in his dinnerChoice array)
+invitees.adults[0].dinnerChoice[1]
 
 // 5. Access Pablo's table number.
+invitees.children[1].table
 
 // 6. Access Lauren's seating specialConsideration.
+invitees.adults[2].specialConsiderations.seating
 
 // 7. Access Billy's dessert choice (this will be the third item in his dinnerChoice array)
+invitees.adults[1].dinnerChoice[2]
+// document.getElementById('q7').innerHTML = temp
 
 // 8. Access Ada's allergies.
-
+invitees.children[2].allergies[0]
 // 9. Create a string that reads Lauren's dinner choice in a sentence.
 // Desired result: "Lauren's appetizer is _______. She will be eating ______ for dinner
 // and has selected ________ as her dessert."
 
-
-
-
+let q9String = `Lauren's appetizer is ${invitees.adults[2].dinnerChoice[0]}. She will be eating ${invitees.adults[2].dinnerChoice[1]} for dinner and has selected ${invitees.adults[2].dinnerChoice[2]} as her dessert.`
 
 
 // 10. Create an empty object called "jsWorkshop" using Constructor Notation.
@@ -150,10 +159,3 @@ var invitees = { adults: [{
 // F. Remove the second book from the books object.
 
 // G. Explain, in your own words, the difference between Literal Notation and Constructor Notation.
-
-
-
-
-
-
-
