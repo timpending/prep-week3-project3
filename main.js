@@ -112,24 +112,43 @@ let q9String = `Lauren's appetizer is ${invitees.adults[2].dinnerChoice[0]}. She
 
 // 10. Create an empty object called "jsWorkshop" using Constructor Notation.
 
+let jsWorkshop = {};
+
 // 11. To your "jsWorkshop" object, assign a key of "classmates" with the value being an array of five your classmates.
+  jsWorkshop.classmates = ['John', 'jan', 'jacob', 'jeremy', 'jack']
 
 // 12. Get the length of the fourth classmate's name.
+jsWorkshop.classmates[3].length
+
 
 // 13. Clear the classmates value.
 
-
+jsWorkshop.classmates = '';
 
 
 
 
 // ADVANCED TRACK
 // A. Create an empty object called "books".
+let books = {}
+
 
 // B. Create three book objects that contain book titles, their author, and number of pages.
 //     The name of each object should be some kind of made up ISBN number.
 //     (Feel free to make up the titles. And the authors. Have fun. No pressure.)
 //     Insert the three objects into the "books" object.
+function Book(title, author, pages){
+  return {
+    title: title,
+    author: author,
+    pages: pages
+  }
+}
+
+books.ISBN22222 = new Book('HALLOOO', 'Tim Pender', 25)
+books.ISBN33333 = new Book('sup Gs', 'George Jefferies', 27)
+books.ISBN44444 = new Book('Turtle Love', 'Thomas Jefferson', 23)
+
 
 // Final desired result:
     // var books = {ISBN22222:  {
